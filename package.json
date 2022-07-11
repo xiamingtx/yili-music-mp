@@ -6,7 +6,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vant/weapp": "^1.10.3"
+    "@vant/weapp": "^1.10.3",
+    "minigame-api-typings": "^3.5.0"
   },
   "devDependencies": {
     "miniprogram-api-typings": "^3.5.0"
