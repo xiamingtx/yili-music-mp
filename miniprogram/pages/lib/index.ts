@@ -1,21 +1,11 @@
-// pages/index/index.ts
+// pages/lib/index.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    categoryBannerList: [
-      {
-        image: '../../images/hip-hop.png'
-      },
-      {
-        image: '../../images/hip-hop.png'
-      },
-      {
-        image: '../../images/hip-hop.png'
-      },
-    ]
+
   },
 
   /**

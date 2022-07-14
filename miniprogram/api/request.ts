@@ -62,6 +62,8 @@ const _handleToken = (header: any) => {
   const token = header['Authorization'] || null
   if (token && getToken() !== token) {
     setToken(token)
-    wx.navigateBack()
+    const currentPages = getCurrentPages()
+    if (currentPages.length > 1)
+      wx.navigateBack()
   }
 }
