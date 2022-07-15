@@ -1,0 +1,5 @@
+<view wx:if="{{ item }}" class="card" bindtap="onTap">
+  <image class="photo" src="{{ item.photo }}" />
+  <view class="name">{{ item.name }}</view>
+  <view class="category">{{ item.category }}</view>
+</view>
