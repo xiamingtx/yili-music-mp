@@ -3,7 +3,7 @@
     <image class="header-bg" src="../../images/header-bg.png" />
     <view class="user-box">
       <view class="avatar-box">
-          <view>依</view>
+        <view>依</view>
       </view>
       <view class="notification-box">
         <image class="bell-icon" src="../../images/bell.svg" />
@@ -14,17 +14,39 @@
   </view>
 
   <scroll-view class="category-banner-list" scroll-x>
-    <view style= "{{ 'width: ' + (categoryBannerList.length*320 + 40) + 'rpx' }}">
-      <view class="category-box" wx:for="{{ categoryBannerList }}" wx:key="index">  
+    <view style="{{ 'width: ' + (categoryBannerList.length*320 + 40) + 'rpx' }}">
+      <view class="category-box" wx:for="{{ categoryBannerList }}" wx:key="index">
         <image src="{{ item.image }}" />
       </view>
     </view>
   </scroll-view>
 
   <view class="trending-musician">
-    <musician-banner
-     title="推荐音乐人"
-     list="{{ musicianBannerList }}"
-      ></musician-banner>
+    <scrollable-section title="推荐音乐人" itemCount="{{ musicianBannerList.length }}" itemWidth="{{ 290 }}">
+      <musician-card wx:for="{{ musicianBannerList }}" wx:key="{{ index }}" item="{{ item }}" bindclick="onClick" />
+    </scrollable-section>
+  </view>
+
+  <view class="section">
+    <scrollable-section title="推荐歌单" itemCount="{{ playlist.length }}" itemWidth="{{ 320 }}">
+      <album-card wx:for="{{ playlist }}" wx:key="index" item="{{ item }}" />
+    </scrollable-section>
+  </view>
+
+  <view class="section">
+    <scrollable-section title="最新专辑" itemCount="{{ playlist.length }}" itemWidth="{{ 320 }}">
+      <album-card wx:for="{{ playlist }}" wx:key="index" item="{{ item }}" />
+    </scrollable-section>
+  </view>
+
+  <view class="section">
+    <scrollable-section title="最新电台" itemCount="{{ playlist.length }}" itemWidth="{{ 320 }}" hideMore>
+      <album-card wx:for="{{ playlist }}" wx:key="index" item="{{ item }}" />
+    </scrollable-section>
+  </view>
+
+  <view class="section">
+    <title-banner title="最近播放" />
+    <music-list />
   </view>
 </view>

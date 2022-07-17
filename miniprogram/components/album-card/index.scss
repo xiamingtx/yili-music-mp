@@ -1,17 +1,17 @@
 @import '../../style/variables.scss';
 
-.card {
+.album-card {
   display: flex;
   flex-direction: column;
-  width: 240rpx;
+  width: 280rpx;
   overflow: hidden;
   align-items: center;
-  .photo {
-    width: 240rpx;
-    height: 240rpx;
-    border-radius: 240rpx;
+  .image {
+    width: 280rpx;
+    height: 280rpx;
+    border-radius: 30rpx;
   }
-  .name {
+  .title {
     margin-top: 20rpx;
     font-size: 32rpx;
     color: $text-active-color;
@@ -20,7 +20,7 @@
     text-overflow: ellipsis;
     white-space:nowrap;
   }
-  .category {
+  .description {
     max-width: 150rpx;
     margin-top: 10rpx;
     font-size: 24rpx;

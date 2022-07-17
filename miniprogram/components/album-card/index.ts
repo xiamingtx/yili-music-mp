@@ -1,3 +1,4 @@
+// components/album-card/index.ts
 Component({
   /**
    * 组件的属性列表
@@ -6,13 +7,9 @@ Component({
     styleIsolation: 'isolated'
   },
   properties: {
-    title: {
-      type: String,
-      default: ''
-    },
-    list: {
-      type: Array,
-      default: null
+    item: {
+      type: null,
+      value: () => null
     }
   },
 
@@ -27,8 +24,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onClick(e: any) {
-      console.log(e)
-    }
+
   }
 })
