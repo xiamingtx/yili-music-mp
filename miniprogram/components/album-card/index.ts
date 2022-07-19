@@ -24,6 +24,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onTap() {
+      const id = this.properties.item.id
+      wx.navigateTo({
+        url: `/pages/play-list/detail?id=${id}`
+      })
+    }
   }
 })

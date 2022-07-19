@@ -50,35 +50,35 @@ Page({
     ],
     playlist: [
       {
+        id: 1,
         image: '../../images/album.png',
         title: '心流音乐',
         description: '歌单描述'
       },
       {
+        id: 2,
         image: '../../images/album.png',
         title: '心流音乐',
         description: '歌单描述'
       },
       {
+        id: 3,
         image: '../../images/album.png',
         title: '心流音乐',
         description: '歌单描述'
       },
       {
+        id: 4,
         image: '../../images/album.png',
         title: '心流音乐',
         description: '歌单描述'
       },
       {
+        id: 5,
         image: '../../images/album.png',
         title: '心流音乐',
         description: '歌单描述'
       },
-      {
-        image: '../../images/album.png',
-        title: '心流音乐',
-        description: '歌单描述'
-      }
     ]
   },
 
