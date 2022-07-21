@@ -1,16 +1,20 @@
-// components/music-list/index.ts
+// components/y-button/index.ts
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    likeable: {
-      type: Boolean,
-      value: false
+    width: {
+      type: String,
+      value: ''
     },
-    list: {
-      type: Array,
-      value: []
+    type: {
+      type: String,
+      value: 'primary',
+    },
+    icon: {
+      type: String,
+      value: ''
     }
   },
 
@@ -18,6 +22,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+
   },
 
   /**

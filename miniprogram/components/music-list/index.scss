@@ -11,6 +11,7 @@
     align-items: center;
     .cover {
       position: relative;
+      margin-right: 30rpx;
       image {
         width: 128rpx;
         height: 128rpx;
@@ -23,23 +24,29 @@
         width: 32rpx;
         height: 32rpx;
         border-radius: 16rpx;
-        background-color: white;
+        background-color: #ffffff;
       }
     }
 
     .info {
-      margin-left: 30rpx;
-      .name {
-        font-size: 32rpx;
-        color: $text-active-color;
-        line-height: 36rpx;
-      }
-      .meta {
-        margin-top: 12rpx;
-        font-size: 28rpx;
-        color: $text-color;
-        line-height: 34rpx;
-      }
+      flex: 1;
+       .name {
+         font-size: 32rpx;
+         color: $text-active-color;
+         line-height: 36rpx;
+       }
+       .meta {
+         margin-top: 12rpx;
+         font-size: 28rpx;
+          color: $text-color;
+          line-height: 34rpx;
+       }
+    }
+
+    .likeable {
+      width: 32rpx;
+      height: 30rpx;
+      margin-right: 20rpx;
     }
   }
 }
