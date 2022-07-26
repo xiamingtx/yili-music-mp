@@ -7,13 +7,6 @@
         {
           "name": "",
           "pathName": "pages/playlist/detail",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/playlist/detail",
           "query": "id=1",
           "launchMode": "default",
           "scene": null
